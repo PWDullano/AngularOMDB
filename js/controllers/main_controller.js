@@ -1,4 +1,4 @@
-app.controller('mainController', ['$scope', '$http', function($scope, $http){
+app.controller('mainController', ['$scope', '$http', '$routeParams', function($scope, $http, $routeParams){
 
 $scope.submitPost = function(){
     $http.get("http://www.omdbapi.com/?s=" + $scope.input).then(function(payload){
