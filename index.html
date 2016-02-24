@@ -5,19 +5,25 @@
     <title>Angular OMDB</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/css/style.css" media="screen" title="no title" charset="utf-8">
   </head>
   <body ng-controller="mainController">
-    <h1>Angular OMDb API Search</h1>
+    <h1 class='header'>Angular OMDb API Search</h1>
     <form ng-submit='submitPost()'>
-      <div class="form-group">
-        <label for="movieSearch">Enter a movie by title!</label>
-        <input type="text" ng-model='input' placeholder="Movie title">
-        <a href="/#/"
-          <input type="submit" value='Search!'class="btn btn-primary">
+      <div class='line'>
+        <div class="form-group">
+          <label for="movieSearch" class='movieSearch'>Enter a movie by title!</label>
+          <br>
+          <input type="text" class='input' ng-model='input' placeholder="Movie title">
+          <br>
+          <a href="/#/"
+            <input type="submit" class="btn btn-primary">Search!
             <span class="glyphicon glyphicon-arrow-right"  ng-click='submitPost()' aria-hidden="true"></span>
-          </input>
-        </a>
+          </a>
+        </input>
       </div>
+    </div>
     </form>
     <div ng-view></div>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>

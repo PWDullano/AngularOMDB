@@ -1,6 +1,10 @@
-<div class='movies' ng-repeat = "movie in movies">
-  <a href="/#/{{movie.imdbID}}/show">
-  <p>{{movie.Title}}</p>
-  <p>{{movie.Year}}</p>
-  </a>
+<div class ='container'>
+  <div class="col-xs-8">
+    <div class='col-xs-6' ng-repeat = "movie in movies">
+      <a href="/#/{{movie.imdbID}}/show">
+        <h5>{{movie.Title}}</h5>
+        <p>year: {{movie.Year}}</p>
+      </a>
+    </div>
+</div>
 </div>

@@ -1,29 +1,31 @@
-<div class='movies' ng-repeat = "showMovie in showMovies">
-  <h2>{{showMovie.Title}}</h2>
-  <img src={{showMovie.Poster}} alt="">
-  <p>Starring: {{showMovie.Actors}}</p>
-  <p>{{showMovie.Plot}}</p>
-  <h3>Additional Details</h3>
-  <h4>Released</h4>
-  <p>{{showMovie.Released}}</p>
-  <h4>Writer</h4>
-  <p>{{showMovie.Writer}}</p>
-  <h4>Director</h4>
-  <p>{{showMovie.Director}}</p>
-  <h4>Country</h4>
-  <p>{{showMovie.Country}}</p>
-  <h4>Language</h4>
-  <p>{{showMovie.Language}}</p>
-  <h4>Rated</h4>
-  <p>{{showMovie.Rated}}</p>
-  <h4>Runtime</h4>
-  <p>{{showMovie.Runtime}}</p>
-  <h4>Awards</h4>
-  <p>{{showMovie.Awards}}</p>
-  <h4>Metascore</h4>
-  <p>{{showMovie.Metascore}}</p>
-  <h4>IMDB Rating</h4>
-  <p>{{showMovie.imdbRating}}</p>
-  <h4>IMDB Votes</h4>
-  <p>{{showMovie.imdbVotes}}</p>
+<div class='showMovie' ng-repeat = "showMovie in showMovies">
+  <h2 class='movieTitle'>{{showMovie.Title}}</h2>
+  <img src={{showMovie.Poster}} class='moviePoster' alt="">
+  <div class='showRight'>
+    <p>Starring: {{showMovie.Actors}}</p>
+    <p>{{showMovie.Plot}}</p>
+    <h3>Additional Details</h3>
+    <h4>Released</h4>
+    <p>{{showMovie.Released}}</p>
+    <h4>Writer</h4>
+    <p>{{showMovie.Writer}}</p>
+    <h4>Director</h4>
+    <p>{{showMovie.Director}}</p>
+    <h4>Country</h4>
+    <p>{{showMovie.Country}}</p>
+    <h4>Language</h4>
+    <p>{{showMovie.Language}}</p>
+    <h4>Rated</h4>
+    <p>{{showMovie.Rated}}</p>
+    <h4>Runtime</h4>
+    <p>{{showMovie.Runtime}}</p>
+    <h4>Awards</h4>
+    <p>{{showMovie.Awards}}</p>
+    <h4>Metascore</h4>
+    <p>{{showMovie.Metascore}}</p>
+    <h4>IMDB Rating</h4>
+    <p>{{showMovie.imdbRating}}</p>
+    <h4>IMDB Votes</h4>
+    <p>{{showMovie.imdbVotes}}</p>
+  </div>
 </div>
